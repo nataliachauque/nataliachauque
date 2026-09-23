@@ -2100,3 +2100,277 @@ footer p {
         font-size: 29px;
     }
 }
+/* =====================================
+   CORREÇÃO FINAL PARA TELEMÓVEL
+===================================== */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    max-width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* ===== TELEMÓVEL ===== */
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        width: 100%;
+        padding: 15px 12px;
+    }
+
+    /* HERO */
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 35px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        overflow: hidden;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero-text > p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .image-circle {
+        width: 210px;
+        height: 210px;
+        max-width: 80vw;
+        max-height: 80vw;
+    }
+
+    /* ===== CARTÕES ===== */
+
+    .cards,
+    .technology-grid,
+    .project-grid,
+    .gallery,
+    .objective-grid,
+    .contact-layout {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        grid-template-columns: 1fr;
+    }
+
+    /* Corrige os cartões que tinham posições
+       especiais no computador */
+    .technology-card:nth-child(1),
+    .technology-card:nth-child(2),
+    .technology-card:nth-child(3),
+    .technology-card:nth-child(4),
+    .technology-card:nth-child(5),
+    .technology-card:nth-child(6) {
+        grid-column: auto;
+    }
+
+    .technology-card,
+    .card,
+    .projeto-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    /* ===== PÁGINAS ===== */
+
+    .page,
+    .section,
+    .about-page,
+    .contact-page,
+    .galeria,
+    .projetos {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    /* ===== SOBRE MIM ===== */
+
+    .about-wide-card,
+    .about-cards,
+    .about-box,
+    .about-text,
+    .about-photo {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 17px;
+    }
+
+    /* ===== PROJETOS ===== */
+
+    .projetos {
+        padding: 40px 15px;
+        margin: 30px auto;
+    }
+
+    .projetos-titulo h1 {
+        font-size: 30px;
+    }
+
+    .projetos-titulo p,
+    .projetos > p {
+        font-size: 16px;
+    }
+
+    .projeto-card {
+        padding: 18px;
+    }
+
+    .projeto-card img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ===== GALERIA ===== */
+
+    .carousel,
+    .galeria-card {
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .galeria-card img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ===== CONTACTOS ===== */
+
+    .contact-box,
+    .contact-info,
+    .contact-form,
+    .message-box {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    /* ===== TEXTOS ===== */
+
+    h1,
+    h2,
+    h3,
+    p,
+    a,
+    li {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    /* ===== IMAGENS ===== */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ===== TELEMÓVEIS PEQUENOS ===== */
+
+@media (max-width: 450px) {
+
+    .navbar {
+        padding: 12px 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero h2 {
+        font-size: 17px;
+    }
+
+    .hero-text > p {
+        font-size: 16px;
+    }
+
+    .image-circle {
+        width: 190px;
+        height: 190px;
+    }
+
+    .page,
+    .section,
+    .about-page,
+    .contact-page,
+    .galeria,
+    .projetos {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .technology-card,
+    .card,
+    .projeto-card {
+        padding: 15px;
+    }
+}
