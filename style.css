@@ -1634,3 +1634,469 @@ footer p {
         scroll-behavior: auto !important;
     }
 }
+/* =====================================
+   AJUSTE FINAL PARA CELULAR
+===================================== */
+
+@media (max-width: 768px) {
+
+    /* Evita que a página fique maior que a tela */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* MENU */
+    header {
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 15px 18px;
+    }
+
+    .logo {
+        font-size: 22px;
+        max-width: 70%;
+    }
+
+    /* INÍCIO */
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        padding: 45px 20px;
+        gap: 30px;
+        box-sizing: border-box;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hello {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.15;
+        overflow-wrap: break-word;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero-text > p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn {
+        max-width: 100%;
+        padding: 11px 18px;
+    }
+
+    /* FOTO PRINCIPAL */
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .image-circle {
+        width: 250px;
+        height: 250px;
+        max-width: 80vw;
+        max-height: 80vw;
+    }
+
+    /* PÁGINAS */
+    .page,
+    .section,
+    .about-page,
+    .contact-page {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+        box-sizing: border-box;
+    }
+
+    .page > h1 {
+        font-size: 32px;
+        overflow-wrap: break-word;
+    }
+
+    /* CARTÕES */
+    .cards {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        padding: 24px 20px;
+        box-sizing: border-box;
+    }
+
+    /* SOBRE MIM */
+    .about-cards {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .interest-card {
+        width: 100%;
+    }
+
+    .about-wide-card,
+    .about-wide-card.area-card {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .about-wide-card:not(.area-card) .about-photo,
+    .about-wide-card:not(.area-card) .about-text,
+    .about-wide-card.area-card .about-photo,
+    .about-wide-card.area-card .about-text {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .about-photo {
+        width: 100%;
+        min-height: 250px;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 28px 20px;
+        box-sizing: border-box;
+    }
+
+    .about-text h2 {
+        font-size: 30px;
+    }
+
+    .about-text p {
+        font-size: 17px;
+    }
+
+    .interest-content {
+        padding: 28px 20px;
+    }
+
+    .interest-content p {
+        font-size: 17px;
+    }
+
+    /* QUALIDADES */
+    .qualidades {
+        padding: 40px 18px;
+    }
+
+    .qualidades-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .qualidades-quadro {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .qualidades-coluna {
+        padding: 25px 20px;
+    }
+
+    /* HABILIDADES / TECNOLOGIAS */
+    .technology-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Remove as posições de 2 colunas usadas no computador */
+    .technology-card:nth-child(1),
+    .technology-card:nth-child(2),
+    .technology-card:nth-child(3),
+    .technology-card:nth-child(4),
+    .technology-card:nth-child(5),
+    .technology-card:nth-child(6) {
+        grid-column: auto;
+    }
+
+    .technology-card {
+        width: 100%;
+        min-height: 260px;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .technology-content {
+        padding: 10px 15px;
+    }
+
+    .technology-content h3 {
+        font-size: 23px;
+    }
+
+    .technology-content p {
+        font-size: 16px;
+    }
+
+    /* BARRAS DE HABILIDADES */
+    .learning-section {
+        width: 100%;
+        padding: 28px 20px;
+        box-sizing: border-box;
+    }
+
+    .learning-section h2 {
+        font-size: 28px;
+    }
+
+    .skill-info span {
+        font-size: 16px;
+    }
+
+    /* FORMAÇÃO */
+    .timeline {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .timeline-item {
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        gap: 15px;
+        padding: 22px;
+    }
+
+    /* PROJETOS */
+    .projetos {
+        width: 100%;
+        max-width: 100%;
+        margin: 40px auto;
+        padding: 40px 18px;
+        box-sizing: border-box;
+    }
+
+    .projetos-titulo h1 {
+        font-size: 32px;
+    }
+
+    .projetos-titulo p {
+        font-size: 16px;
+    }
+
+    .projetos-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .projeto-card {
+        width: 100%;
+        min-height: auto;
+        padding: 22px;
+        box-sizing: border-box;
+    }
+
+    .projeto-card img {
+        width: 100%;
+        height: 190px;
+    }
+
+    /* OBJETIVOS */
+    .objective-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+    }
+
+    .objective-card {
+        width: 100%;
+        padding: 25px 20px;
+        box-sizing: border-box;
+    }
+
+    .future-goals {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 28px 20px;
+        box-sizing: border-box;
+    }
+
+    /* GALERIA */
+    .galeria {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px 15px;
+        box-sizing: border-box;
+    }
+
+    .galeria .container,
+    .carousel {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .galeria h1 {
+        font-size: 32px;
+    }
+
+    .descricao-galeria {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .carousel-window {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .carousel-track {
+        width: 100%;
+    }
+
+    .galeria-card {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .galeria-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .carousel-prev {
+        left: 5px;
+    }
+
+    .carousel-next {
+        right: 5px;
+    }
+
+    /* CONTACTOS */
+    .contact-layout {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 18px;
+        box-sizing: border-box;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 22px;
+    }
+
+    .message-box {
+        width: 100%;
+        padding: 22px;
+        box-sizing: border-box;
+    }
+
+    /* RODAPÉ */
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    footer p {
+        margin: 10px;
+    }
+}
+
+/* =====================================
+   CELULARES PEQUENOS
+===================================== */
+
+@media (max-width: 450px) {
+
+    .navbar {
+        padding: 14px 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 35px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero-text > p {
+        font-size: 17px;
+    }
+
+    .image-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .page,
+    .section,
+    .about-page,
+    .contact-page {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .page > h1 {
+        font-size: 29px;
+    }
+
+    .about-text h2 {
+        font-size: 26px;
+    }
+
+    .technology-card {
+        min-height: 240px;
+    }
+
+    .projeto-card img {
+        height: 170px;
+    }
+
+    .galeria h1 {
+        font-size: 29px;
+    }
+}
