@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria | Natália Chaúque</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<a href="index.html" class="logo">Natália Chaúque</a>
+<ul class="nav-links">
+<li><a href="index.html">Início</a></li>
+<li><a href="sobre.html">Sobre Mim</a></li>
+<li><a href="habilidades.html">Habilidades</a></li>
+<li><a href="formacao.html">Formação</a></li>
+<li><a href="projectos.html">Projetos</a></li>
+<li><a href="galeria.html" class="active">Galeria</a></li>
+<li><a href="objectivos.html">Objetivos</a></li>
+<li><a href="contactos.html">Contactos</a></li>
+</ul>
+<button class="menu-btn">☰</button>
+</nav>
+</header>
+<main class="page galeria">
+<div class="container">
+<h1>Minha Galeria</h1>
+<p class="descricao-galeria">Nesta galeria apresento alguns dos meus trabalhos, atividades e experiências desenvolvidas durante a minha formação.</p>
+<div class="carousel">
+<button class="carousel-btn carousel-prev" onclick="moverGaleria(-1)">‹</button>
+<div class="carousel-window">
+<div class="carousel-track" id="carouselTrack">
+<div class="galeria-card">
+<img src="Foto/portfolio.png" alt="Projeto 1">
+<div class="galeria-info">
+<h2>Meu Portfólio</h2>
+<p>Projeto desenvolvido para apresentar a minha formação, habilidades, projetos e experiências na área de Suporte Informático.</p>
+</div>
+</div>
+<div class="galeria-card">
+<img src="Foto/NATY-TECH.png" alt="Projeto 2">
+<div class="galeria-info">
+<h2>Desenvolvimento Web</h2>
+<p>Atividade relacionada com HTML, CSS e desenvolvimento de páginas web.</p>
+</div>
+</div>
+<div class="galeria-card">
+<img src="Foto/REDES.jpg" alt="Projeto 3">
+<div class="galeria-info">
+<h2>Redes</h2>
+<p>Trabalho prático relacionado com redes de computadores.</p>
+</div>
+</div>
+<div class="galeria-card">
+<img src="Foto/SISTEMA-OPERATIVO.jpg" alt="Projeto 4">
+<div class="galeria-info">
+<h2>Sistema Operativo</h2>
+<p>Atividade prática relacionada com instalação e configuração de sistemas operativos.</p>
+</div>
+</div>
+<div class="galeria-card">
+<img src="Foto/Registo.png" alt="Projeto 5">
+<div class="galeria-info">
+<h2>Informática</h2>
+<p>Registo de atividades realizadas durante a minha formação.</p>
+</div>
+</div>
+<div class="galeria-card">
+<img src="Foto/BI.png" alt="Projeto 6">
+<div class="galeria-info">
+<h2>Trabalhos Práticos</h2>
+<p>Alguns dos trabalhos desenvolvidos durante o curso.</p>
+</div>
+</div>
+</div>
+</div>
+<button class="carousel-btn carousel-next" onclick="moverGaleria(1)">›</button>
+</div>
+<div class="carousel-dots" id="carouselDots"></div>
+</div>
+</main>
+<footer>
+<p>© 2026 Natália Chaúque - Técnica de Suporte Informático</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

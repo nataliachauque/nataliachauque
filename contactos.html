@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos - Natália Chaúque</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Natália Chaúque</a>
+            <button class="menu-btn" id="menu-btn">☰</button>
+              <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="active">Início</a></li>
+    <li><a href="sobre.html">Sobre Mim</a></li>
+    <li><a href="habilidades.html">Habilidades</a></li>
+    <li><a href="formacao.html">Formação</a></li>
+    <li><a href="projectos.html">Projetos</a></li>
+    <li><a href="galeria.html">Galeria</a></li>
+    <li><a href="objectivos.html">Objetivos</a></li>
+    <li><a href="contactos.html">Contactos</a></li>
+</ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-page">
+            <h1 class="section-title">Entre em <span>Contacto</span></h1>
+            <p class="section-intro">Pode entrar em contacto comigo através das minhas redes sociais ou pelo meu e-mail. Clique numa das opções abaixo para visitar o meu perfil ou enviar uma mensagem.</p>
+            <div class="contact-box">
+                <a href="https://wa.me/258879935284" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>WhatsApp</h3>
+                    <p>+258 87 993 5284</p>
+                </a>
+                <a href="https://www.instagram.com/naty_8560" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+                    <h3>Instagram</h3>
+                    <p>@naty_8560</p>
+                </a>
+                <a href="mailto:natalia17chauque@gmail.com" class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>E-mail</h3>
+                    <p>natalia17chauque@gmail.com</p>
+                </a>
+                <a href="tel:+258864735284" class="contact-item">
+                    <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <h3>Telefone</h3>
+                    <p>+258 86 473 5284</p>
+                </a>
+            </div>
+            <div class="message-box">
+                <h2>Fale comigo</h2>
+                <p>Preencha os campos abaixo para enviar uma mensagem.
+                    A mensagem será recebida através do meu formulário de contacto.
+                </p>
+                <form action="https://formspree.io/f/mzezegnp"
+                method="post"> 
+                <!--NOME-->
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+                    </div>
+                    <!--EMAIL-->
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite o seu e-mail">
+                    </div>
+                    <!--Mensagem-->
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite a sua mensagem"></textarea>
+                    </div>
+                    <!--BOTAO-->
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+<!-- RODAPÉ -->
+    <footer>
+        <p>
+            © 2026 Natália Chaúque
+        </p>
+        <p>
+            Técnica de Suporte Informático
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
