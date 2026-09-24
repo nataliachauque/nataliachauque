@@ -2375,212 +2375,116 @@ body {
     }
 }
 /* =====================================
-   RESPONSIVIDADE PARA TELEMÓVEL
+   CORREÇÃO FINAL - MENU E FOTO
 ===================================== */
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
 @media (max-width: 768px) {
-    main,
-    section,
-    .page {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
     .navbar {
         width: 100%;
-        max-width: 100%;
-        padding: 12px 15px;
+        padding: 14px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         box-sizing: border-box;
     }
     .logo {
         font-size: 21px;
+        white-space: nowrap;
+        max-width: none;
     }
-    h1 {
-        font-size: 30px !important;
+    .menu-btn {
+        display: block !important;
+        font-size: 28px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: white;
+        padding: 5px;
+        z-index: 1002;
     }
-    h2 {
-        font-size: 24px !important;
+    .nav-links {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px 15px;
+        background: #000e1b;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        box-sizing: border-box;
+        z-index: 1001;
     }
-    h3 {
-        font-size: 20px !important;
+    .nav-links.show {
+        display: flex !important;
     }
-    p {
-        font-size: 16px;
-        line-height: 1.5;
+    .nav-links a {
+        font-size: 18px;
+        white-space: nowrap;
     }
     .hero {
         width: 100%;
-        max-width: 100%;
-        padding: 35px 15px;
-        gap: 25px;
+        padding: 35px 15px 25px;
+        display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
         box-sizing: border-box;
         overflow: hidden;
     }
     .hero-text {
         width: 100%;
         max-width: 100%;
-        min-width: 0;
+        text-align: center;
     }
     .hero h1 {
-        font-size: 34px !important;
+        font-size: 32px !important;
         line-height: 1.15;
     }
     .hero h2 {
         font-size: 18px !important;
     }
     .hero-text > p {
-        font-size: 17px;
+        font-size: 16px;
         line-height: 1.5;
+    }
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
     }
     .hero-image {
         width: 100%;
-        max-width: 100%;
+        display: flex;
         justify-content: center;
+        align-items: center;
+        margin-top: 5px;
     }
     .image-circle {
-        width: 210px;
-        height: 210px;
-        max-width: 80vw;
-        max-height: 80vw;
-    }
-    .cards,
-    .technology-grid,
-    .project-grid,
-    .gallery,
-    .objective-grid,
-    .contact-layout {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .technology-card:nth-child(1),
-    .technology-card:nth-child(2),
-    .technology-card:nth-child(3),
-    .technology-card:nth-child(4),
-    .technology-card:nth-child(5),
-    .technology-card:nth-child(6) {
-        grid-column: auto;
-    }
-    .card,
-    .technology-card,
-    .projeto-card {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
-    .page,
-    .section,
-    .about-page,
-    .contact-page,
-    .galeria,
-    .projetos {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
-    .about-wide-card,
-    .about-box,
-    .about-text,
-    .about-photo {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
-    .about-text h2 {
-        font-size: 28px !important;
-    }
-    .about-text p {
-        font-size: 17px;
-    }
-    .projetos {
-        width: 100%;
-        max-width: 100%;
-        padding: 35px 15px;
-        margin: 20px auto;
-        box-sizing: border-box;
-    }
-    .projetos-titulo h1 {
-        font-size: 30px !important;
-    }
-    .projetos-titulo p,
-    .projetos > p {
-        font-size: 16px;
-    }
-    .projeto-card {
-        padding: 18px;
-    }
-    .projeto-card img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-    .carousel,
-    .galeria-card {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
-    .galeria-card img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
-    .contact-box,
-    .contact-info,
-    .contact-form,
-    .message-box {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
-    .learning-section,
-    .qualidades-quadro {
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        box-sizing: border-box;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    p,
-    a,
-    li,
-    h1,
-    h2,
-    h3 {
-        max-width: 100%;
-        overflow-wrap: anywhere;
+        width: 180px;
+        height: 180px;
+        padding: 7px;
+        margin: 0 auto;
     }
 }
 @media (max-width: 450px) {
     .navbar {
-        padding: 12px 10px;
+        padding: 12px 14px;
     }
     .logo {
         font-size: 20px;
     }
+    .menu-btn {
+        font-size: 26px;
+    }
     .hero {
-        padding: 30px 10px;
+        padding: 30px 12px 20px;
+        gap: 18px;
     }
     .hero h1 {
-        font-size: 28px !important;
+        font-size: 29px !important;
     }
     .hero h2 {
         font-size: 17px !important;
@@ -2589,30 +2493,7 @@ body {
         font-size: 15px;
     }
     .image-circle {
-        width: 180px;
-        height: 180px;
-    }
-    h1 {
-        font-size: 27px !important;
-    }
-    h2 {
-        font-size: 22px !important;
-    }
-    p {
-        font-size: 15px;
-    }
-    .page,
-    .section,
-    .about-page,
-    .contact-page,
-    .galeria,
-    .projetos {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .card,
-    .technology-card,
-    .projeto-card {
-        padding: 15px;
+        width: 165px;
+        height: 165px;
     }
 }
