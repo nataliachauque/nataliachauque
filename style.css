@@ -2780,3 +2780,76 @@ body {
         padding: 15px;
     }
 }
+/* =====================================
+   AJUSTE DAS FOTOS NO TELEMÓVEL
+===================================== */
+@media (max-width: 768px) {
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .hero-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        overflow: hidden;
+    }
+    .image-circle {
+        width: 160px !important;
+        height: 160px !important;
+        max-width: 160px !important;
+        max-height: 160px !important;
+        padding: 5px !important;
+        margin: 0 auto !important;
+    }
+    .image-circle img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        border-radius: 50%;
+    }
+    .projeto-card img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 150px !important;
+        object-fit: cover !important;
+    }
+    .galeria-card img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 150px !important;
+        object-fit: cover !important;
+    }
+    .about-photo img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 180px !important;
+        object-fit: cover !important;
+    }
+    .card img,
+    .technology-card img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 150px !important;
+        object-fit: cover !important;
+    }
+}
+@media (max-width: 450px) {
+    .image-circle {
+        width: 140px !important;
+        height: 140px !important;
+        max-width: 140px !important;
+        max-height: 140px !important;
+    }
+    .projeto-card img,
+    .galeria-card img,
+    .card img,
+    .technology-card img {
+        height: 130px !important;
+    }
+    .about-photo img {
+        height: 160px !important;
+    }
+}
