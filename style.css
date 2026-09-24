@@ -2374,3 +2374,245 @@ body {
         padding: 15px;
     }
 }
+/* =====================================
+   RESPONSIVIDADE PARA TELEMÓVEL
+===================================== */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+    main,
+    section,
+    .page {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .navbar {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px 15px;
+        box-sizing: border-box;
+    }
+    .logo {
+        font-size: 21px;
+    }
+    h1 {
+        font-size: 30px !important;
+    }
+    h2 {
+        font-size: 24px !important;
+    }
+    h3 {
+        font-size: 20px !important;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        padding: 35px 15px;
+        gap: 25px;
+        flex-direction: column;
+        text-align: center;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+    .hero h1 {
+        font-size: 34px !important;
+        line-height: 1.15;
+    }
+    .hero h2 {
+        font-size: 18px !important;
+    }
+    .hero-text > p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .hero-image {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+    .image-circle {
+        width: 210px;
+        height: 210px;
+        max-width: 80vw;
+        max-height: 80vw;
+    }
+    .cards,
+    .technology-grid,
+    .project-grid,
+    .gallery,
+    .objective-grid,
+    .contact-layout {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .technology-card:nth-child(1),
+    .technology-card:nth-child(2),
+    .technology-card:nth-child(3),
+    .technology-card:nth-child(4),
+    .technology-card:nth-child(5),
+    .technology-card:nth-child(6) {
+        grid-column: auto;
+    }
+    .card,
+    .technology-card,
+    .projeto-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    .page,
+    .section,
+    .about-page,
+    .contact-page,
+    .galeria,
+    .projetos {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    .about-wide-card,
+    .about-box,
+    .about-text,
+    .about-photo {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    .about-text h2 {
+        font-size: 28px !important;
+    }
+    .about-text p {
+        font-size: 17px;
+    }
+    .projetos {
+        width: 100%;
+        max-width: 100%;
+        padding: 35px 15px;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+    .projetos-titulo h1 {
+        font-size: 30px !important;
+    }
+    .projetos-titulo p,
+    .projetos > p {
+        font-size: 16px;
+    }
+    .projeto-card {
+        padding: 18px;
+    }
+    .projeto-card img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .carousel,
+    .galeria-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    .galeria-card img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .contact-box,
+    .contact-info,
+    .contact-form,
+    .message-box {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    .learning-section,
+    .qualidades-quadro {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    p,
+    a,
+    li,
+    h1,
+    h2,
+    h3 {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+}
+@media (max-width: 450px) {
+    .navbar {
+        padding: 12px 10px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .hero {
+        padding: 30px 10px;
+    }
+    .hero h1 {
+        font-size: 28px !important;
+    }
+    .hero h2 {
+        font-size: 17px !important;
+    }
+    .hero-text > p {
+        font-size: 15px;
+    }
+    .image-circle {
+        width: 180px;
+        height: 180px;
+    }
+    h1 {
+        font-size: 27px !important;
+    }
+    h2 {
+        font-size: 22px !important;
+    }
+    p {
+        font-size: 15px;
+    }
+    .page,
+    .section,
+    .about-page,
+    .contact-page,
+    .galeria,
+    .projetos {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .card,
+    .technology-card,
+    .projeto-card {
+        padding: 15px;
+    }
+}
