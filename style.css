@@ -650,19 +650,19 @@ header {
 .technology-card:nth-child(5) { animation-delay: 0.5s; }
 .technology-card:nth-child(6) { animation-delay: 0.6s; }
 .html-card {
-    background-image: url("Foto/HTML.jpg");
+    background-image: url("HTML.jpg");
 }
 .css-card {
-    background-image: url("Foto/css.jpg");
+    background-image: url("css.jpg");
 }
 .javascript-card {
-    background-image: url("Foto/JAVA.jpg");
+    background-image: url("JAVA.jpg");
 }
 .redes-card {
-    background-image: url("Foto/redes.jpg");
+    background-image: url("redes.jpg");
 }
 .sistemas-card {
-    background-image: url("Foto/SISTEMA-OPERATIVO.jpg");
+    background-image: url("SISTEMA-OPERATIVO.jpg");
 }
 .technology-card::before {
     content: "";
